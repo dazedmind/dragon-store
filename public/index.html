@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/dragon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<!-- <nav id="nav">
+    <div id="nav-link">
+        <a class="navlink" href="#">Home</a>
+        <a class="navlink" href="#">Shop</a>
+        <a class="navlink" href="#">Products</a>
+    </div>
+    <div>
+        <button id="toggle" onclick="toggleMode()"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px"><rect fill="none" height="24" width="24"/><path d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg></button>
+    </div>
+</nav> -->
+<body>
+    <header id="header">
+        <div class="browse">
+            <h1 id="head-brand">DragonStore</h1>
+            <input type="text" placeholder="Browse" class="header-search">
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i> </button>
+        </div>
+        <div class="navigation">
+            <div id="nav-link">
+                <a class="navlink" href="#">Home</a>
+                <a class="navlink" href="#">Shop</a>
+                <a class="navlink" href="#">Products</a>
+                <a id="hidden-navtoggle" href="#">Categories</a>
+                <ul class="hidden-nav">
+                    <li>
+                        <a href="">Electronics</a>
+                    </li>
+                    <li>
+                        <a href="">Home & Living</a>
+                    </li>
+                    <li>
+                        <a href="">Apparels</a>
+                    </li>
+                    <li>
+                        <a href="">Accessories</a>
+                    </li>
+                    <li>
+                        <a href="">Toys & Collectibles</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button id="toggle" onclick="toggleMode()"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px"><rect fill="none" height="24" width="24"/><path d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="welcomePage" id="section1">
+            <div class="wc-content">
+                <h1>Welcome to DragonStore!</h1>
+                <p>Browse on a wide range of products available on the market and on the hands of small businesses </p> <br>
+                <span>
+                    <a class="lrnmr" href="#section2">Learn More</a>
+                </span>
+            </div>
+            <img id="content-img1" src="img/dragonstore.png" alt="">
+        </div>
+
+        <div class="welcomePage" id="section2">
+            <div class="wc-content2">
+                <h1>Shop with ease</h1>
+                <p> Easy interface with minimal navigation that makes shopping more convenient and easier than ever.
+                </p>
+            </div>
+            <img class="content-img" src="" alt="">
+        </div>
+        <div class="welcomePage" id="section3">
+            <div class="wc-content3">
+                <h1>Shopping mall right at your fingertips</h1>
+                <p>With Dragonstore you can now shop without the hassle of going out of your house or starting the car.</p>
+
+                <span>
+                    <a class="lrnmr" href="#">Get started</a>
+                </span>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </main>
+</body>
+
+
+<footer>
+    <div class="footer-contents">
+        <ul class="socmed">
+            <li>Follow us on</li>
+            <li><a class="link" href="www.facebook.com"><img src="./img/facebook.png" alt="Facebook" style="width: 22px; height: 22px; filter: invert();"></a></li>
+            <li><a class="link" href="www.twitter.com"><img src="./img/twitter.png" alt="Twitter" style="width: 22px; height: 22px; filter: invert();"></a></li>
+            <li><a class="link" href="www.instagram.com"><img src="./img/instagram.png" alt="Instagram" style="width: 22px; height: 22px; filter: invert();"></a></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="extlink">
+            <li><a class="link" href="#">Home</a></li>
+            <li><a class="link" href="#">Products</a></li>
+            <li><a class="link" href="#">Help</a></li>
+            <li><a class="link" href="#">Privacy</a></li>
+            <li><a class="link" href="#">Terms</a></li>
+        </ul>
+    </div>
+</footer>
+</html>
